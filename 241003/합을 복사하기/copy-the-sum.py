@@ -1,6 +1,8 @@
-a,b,c = 1,2,3
-a = a + b + c
-b = a + b + c
-c = a + b + c
+# 변수 선언
+a, b, c = 1, 2, 3
 
-print(f"6 6 6")
+#값 변경
+a = b = c = a + b + c
+
+# 출력
+print(a, b, c)
