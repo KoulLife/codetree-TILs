@@ -4,7 +4,7 @@ cnt = 1
 while True:
     if cnt > n*n:
         break
-    if cnt % 4 == 0:
+    if cnt % n == 0:
         print(num)
     else:
         print(num,end=" ")
