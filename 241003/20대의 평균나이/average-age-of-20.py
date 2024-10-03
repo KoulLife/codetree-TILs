@@ -1,9 +1,10 @@
 stack = []
-
+ageSum = 0
+ageCnt = 0
 while True:
     n = int(input())
     if n >= 30:
         break
-    stack.append(n)
-
-print(f"{sum(stack) / len(stack):.2f}")
+    ageSum += n
+    ageCnt += 1
+print(f"{ageSum / ageCnt:.2f}")
