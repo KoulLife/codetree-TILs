@@ -1,10 +1,9 @@
-stack = []
 ageSum = 0
 ageCnt = 0
 while True:
-    n = int(input())
-    if n >= 30:
+    age = int(input())
+    if age < 20 or age >= 30:
         break
-    ageSum += n
+    ageSum += age
     ageCnt += 1
-print(f"{ageSum / ageCnt:.2f}")
+print(f"{ageSum/ageCnt:.2f}")
