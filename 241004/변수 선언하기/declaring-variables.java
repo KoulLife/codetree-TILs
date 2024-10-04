@@ -3,7 +3,7 @@ public class Main {
         int a = 3;
         char b = 'C';
 
-        println(a);
-        println(b);
+        System.out.println(a);
+        System.out.println(b);
     }
 }
