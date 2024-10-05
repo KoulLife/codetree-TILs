@@ -7,18 +7,18 @@ public class Main {
 
         int n = sc.nextInt();
         int res = 0;
-        for(int i = 1; i <= n; i++) {
-            if(res > n) {
-                System.out.println("N");
-                break;
-            }
-            if(res == n) {
-                System.out.println("P");
-                break;
-            }
+
+        for(int i = 1; i <= n/2; i++) {
             if(n % i == 0) {
                 res += i;
             }
+        }
+
+        if (n == res) {
+            System.out.println("P");
+        }
+        else{
+            System.out.println("N");
         }
 
     }
