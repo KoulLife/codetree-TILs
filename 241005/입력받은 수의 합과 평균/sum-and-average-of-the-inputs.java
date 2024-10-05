@@ -8,6 +8,6 @@ public class Main {
         for(int i = 0; i < n; i++) {
             res += sc.nextInt();
         }
-        System.out.print(res+" "+(double)res/n);
+        System.out.printf("%d %.1f", res, (double)res/n);
     }
 }
