@@ -11,6 +11,7 @@ public class Main {
         for(int i = a; i <= b; i++) {
             prod *= i;
         }
+        
         System.out.println(prod);
     }
 }
