@@ -5,19 +5,15 @@ public class Main {
         
         Scanner sc = new Scanner(System.in);
 
-        String arr = sc.nextLine();
+        String str = sc.nextLine();
 
-        for(int i = 0; i < arr.length(); i++) {
-            if(arr.charAt(i) >= 'A' && arr.charAt(i) <= 'z') {
-                if(arr.charAt(i) > 'Z'){
-                    System.out.print((char)(arr.charAt(i) - 'a' + 'A'));    
-                }
-                else{
-                    System.out.print(arr.charAt(i));
-                }
-                
-            }
+        for(int i = 0; i < str.length(); i++) {
+            if(str.charAt(i) >= 'A' && str.charAt(i) <= 'Z')
+                System.out.print(str.charAt(i));
+            else if(str.charAt(i) >= 'a' && str.charAt(i) <= 'z')
+                System.out.print((char)(str.charAt(i) - 'a' + 'A'));
         }
+        
 
     }
 }
