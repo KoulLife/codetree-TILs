@@ -13,7 +13,7 @@ class Student implements Comparable<Student> {
     public int compareTo(Student s) {
         if(s.h == this.h){
             if (s.w == this.w){
-                return s.idx - this.idx;
+                return this.idx - s.idx;
             }
             return s.w - this.w;
         }
