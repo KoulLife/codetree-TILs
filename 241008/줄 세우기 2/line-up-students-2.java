@@ -33,6 +33,8 @@ public class Main {
             people[i] = person;
         }
 
+        Arrays.sort(people);
+
         for(int i = 0; i < n; i++) {
             System.out.printf("%d %d %d\n",
             people[i].height, people[i].weight, people[i].idx);
