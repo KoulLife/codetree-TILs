@@ -25,9 +25,10 @@ public class Main {
 
         int max = 0;
 
-        for(int i = 0; i <= MAX_R; i++)
-            if(arr[i] > max)
+        for(int i = 0; i <= 200; i++)
+            if(arr[i] > max){
                 max = arr[i];
+            }
         
         // 출력
         System.out.print(max);
