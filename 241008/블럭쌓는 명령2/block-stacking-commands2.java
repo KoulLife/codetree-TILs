@@ -2,31 +2,28 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        
         Scanner sc = new Scanner(System.in);
-
         int n = sc.nextInt();
         int k = sc.nextInt();
-
-        int[] arr = new int[n];
+        int[] arr = new int[n + 1];
 
         for(int i = 0; i < k; i++) {
-            int a = sc.nextInt();
-            int b = sc.nextInt();
-            for(int j = a; j <= b; j++) {
-                arr[j] += 1;
+            int left = sc.nextInt();
+            int right = sc.nextInt();
+
+            for(int idx = left; idx <= right; idx++) {
+                arr[idx] += 1;
             }
+
         }
 
         int maxNum = 0;
 
-        for(int i = 0; i < k; i++) {
-            if(arr[i] >= maxNum){
-                maxNum = arr[i];
-            }
+        for(int i = 0; i <= n; i++) {
+            maxNum = Math.max(maxNum, arr[i]);
         }
 
-        System.out.println(maxNum + 1);
+        System.out.println(maxNum);
 
     }
 }
