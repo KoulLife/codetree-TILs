@@ -18,17 +18,15 @@ public class Main {
             }
         }
 
-        int res = -1;
         int maxNum = 0;
 
         for(int i = 0; i < k; i++) {
             if(arr[i] >= maxNum){
                 maxNum = arr[i];
-                res = i;
             }
         }
 
-        System.out.println(res);
+        System.out.println(maxNum + 1);
 
     }
 }
