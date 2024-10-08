@@ -15,13 +15,11 @@ public class Main {
         int ans = 0;
         int cnt = 0;
 
-        for(int i = 0; i < n - 1; i++) {
-            if(arr[i] < arr[i + 1]){
-                cnt += 1;
-            }
-            else{
+        for(int i = 0; i < n; i++) {
+            if(i > 0 && arr[i] > arr[i - 1])
+                cnt+=1;
+            else
                 cnt = 1;
-            }
             ans = Math.max(cnt, ans);
         }
 
