@@ -18,7 +18,7 @@ public class Main {
         }
 
         for(int i = 0; i < n; i++) {
-            for(int j = a1[i]; j <= a2[i]; j++) {
+            for(int j = a1[i]; j < a2[i]; j++) {
                 arr[j]++;
             }
         }
