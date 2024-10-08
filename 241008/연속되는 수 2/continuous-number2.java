@@ -11,14 +11,19 @@ public class Main {
 
         for(int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
-            if(i > 0 && arr[i - 1] != arr[i]) {
+
+            if(i == 0) {
+                cnt = 0;
+            }
+
+            else if(arr[i - 1] != arr[i]) {
                 res = Math.max(res, cnt);
                 cnt = 0;
             }
             cnt++;
         }
 
-        System.out.println(res);
+        System.out.println(Math.max(res, cnt));
 
     }
 }
