@@ -36,25 +36,16 @@ public class Main {
         int win = 0;
         for(int i = 0; i < left; i++) {
             if(posA[i] > posB[i]){
-                int tmp = 1;
-                if(win != tmp)
+                if(win == 2)
                     ans += 1;
-                win = tmp;
+                win = 1;
             }
             else if(posA[i] < posB[i]){
-                int tmp = 2;
-                if(win != tmp)
+                if(win == 1)
                     ans += 1;
-                win = tmp;
+                win = 2;
             }
         }
-
-        if(ans > 0)
-            ans -= 1;
-        else
-            ans = 0;
-
         System.out.println(ans);
-
     }
 }
