@@ -18,8 +18,11 @@ public class Main {
             if(arr[i] > 0 && arr[i] > t && arr[i] == arr[i - 1]+1){
                 cnt++;
             }
-            else{
+            else if(arr[i] > 0){
                 cnt = 1;
+            }
+            else{
+                cnt = 0;
             }
             res = Math.max(res, cnt);
         }
