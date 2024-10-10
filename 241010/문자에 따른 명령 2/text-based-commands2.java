@@ -13,7 +13,8 @@ public class Main {
         int dirNum = 3;
 
         String com = sc.next();
-        char[] dir = com.toCharArray();
+        char[] dir = new char[100000];
+        dir = com.toCharArray();
 
         for(int i = 0; i < dir.length; i++) {
             if (dir[i] == 'L'){
