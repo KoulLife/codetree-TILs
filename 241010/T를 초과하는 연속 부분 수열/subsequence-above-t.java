@@ -18,7 +18,7 @@ public class Main {
             if(arr[i] > 0 && arr[i] > t && arr[i] == arr[i - 1]+1){
                 cnt++;
             }
-            else if(arr[i] > 0){
+            else if(arr[i] > t){
                 cnt = 1;
             }
             else{
