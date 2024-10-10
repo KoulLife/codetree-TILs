@@ -21,8 +21,8 @@ public class Main {
             else if(cDir == 'R')
                 dirNum = (dirNum + 1) % 4;
             else{
-                nx += dx[currDir];
-                ny += dy[currDir];
+                nx += dx[dirNum];
+                ny += dy[dirNum];
             }
         }
 
