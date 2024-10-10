@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Main {
 
-    public static int[] posA = new int[1001];
-    public static int[] posB = new int[1001];
+    public static int[] posA = new int[10001];
+    public static int[] posB = new int[10001];
 
     public static void main(String[] args) {
         
