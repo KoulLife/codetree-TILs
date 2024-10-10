@@ -46,7 +46,7 @@ public class Main {
         }
 
         int ans = -1;
-        for(int i = 1; i < Math.min(leftMove,rightMove); i++) {
+        for(int i = 1; i < leftMove; i++) {
             if(posA[i] == posB[i]){
                 ans = i;
                 break;
