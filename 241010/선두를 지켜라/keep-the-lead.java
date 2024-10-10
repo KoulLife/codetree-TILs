@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main {
 
-    public static final int MAX = 100000;
+    public static final int MAX = 1000000;
     public static int[] posA = new int[MAX + 1];
     public static int[] posB = new int[MAX + 1];
 
