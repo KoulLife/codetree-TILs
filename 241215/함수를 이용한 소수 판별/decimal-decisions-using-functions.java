@@ -14,7 +14,7 @@ public class Main {
     public static int addPrime(int a, int b) {
         
         int sum = 0;
-        for(int i = a; i <= b; i++) {
+        for(int i = Math.max(a,2); i <= b; i++) {
             if(isPrime(i)) {
                 sum += i;
             }
