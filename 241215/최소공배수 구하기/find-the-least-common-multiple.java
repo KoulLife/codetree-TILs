@@ -3,19 +3,16 @@ import java.util.Scanner;
 public class Main {
 
     public static int findMaxNum(int n, int m) {
+        int stan = 1;
         
-        int stan = Math.max(n, m);
-        int cnt = 1;
-        
-        while(true) {
-            
-            stan *= cnt;
-            cnt++;
+        for(int i = 1; i <= Math.min(n,m); i++) {
+            stan = Math.max(n,m) * i;
 
-            if(stan % n == 0 && stan % m == 0) {
-                return stan;
+            if (stan % n == 0 && stan % m == 0) {
+                break;
             }
         }
+        return stan;
     }
 
     public static void main(String[] args) {
