@@ -12,7 +12,7 @@ public class Main {
 
         int[] days = new int[]{0,31,28,31,30,31,30,31,31,30,31,30,31};
 
-        int res = 0;
+        int res = 1;
 
         while(true) {
             if(m1 == m2 && d1 == d2){
@@ -23,7 +23,7 @@ public class Main {
             d1 ++;
 
             if(days[m1] < d1) {
-                d1 = 0;
+                d1 = 1;
                 m1++;
             }
         }
