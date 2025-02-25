@@ -1,4 +1,6 @@
-arr = list(map(int, input().split()))
+arr = []
+for _ in range(5):
+    arr.append(int(input()))
 
 cnt = 0
 for a in arr:
