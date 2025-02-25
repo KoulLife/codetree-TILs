@@ -1,4 +1,7 @@
 a,b = map(int, input().split())
 
-for i in range(b):
+if a <= 0:
+    print(0)
+else:
+    for i in range(b):
     print(a,end="")
